@@ -1,0 +1,17 @@
+/* 
+.cell-blank
+.cell-dashed
+.cell-tick
+.cell-crossed */
+
+.cell-dashed{
+    background-color: rgb(255, 255, 175);
+}
+
+.cell-tick{
+    background-color: lightgreen;
+}
+
+.cell-crossed{
+    background-color: lightcoral;
+}

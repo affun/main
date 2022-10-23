@@ -1,0 +1,14 @@
+:root{
+    /* fonts */
+    --ff-title: 'Alkalami', serif;
+    --ff-primary: 'Barlow', sans-serif;
+    --ff-secondary: font-family: 'Inter', sans-serif;
+
+    /* colors */
+    --clr-grey-1: #333;
+    --clr-grey-2: #1d1d1d;
+    --clr-p-1: #f8f0ce;
+    --clr-p-2: #f1f9fb;
+    --clr-p-3: #e6efe6;
+    --clr-p-4: #eff0d9;
+}

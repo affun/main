@@ -1,0 +1,1052 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- title -->
+    <title>Check List</title>
+
+    <!-- Tailwind Css link -->
+    <link href="https://unpkg.com/tailwindcss@^2.0/dist/tailwind.min.css" rel="stylesheet">
+
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="CSS/var.css">
+    <link rel="stylesheet" href="CSS/main.css">
+    <link rel="stylesheet" href="CSS/custom.css">
+    <link rel="stylesheet" href="CSS/check-box.css">
+
+    <!-- font awesone -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alkalami&family=Barlow:ital,wght@0,300;0,400;1,300;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+</head>
+<body class="flex justify-center items-center px-5 py-10">
+<div class="page bg-white flex flex-col justify-center items-center max-w-screen-md w-full py-8 px-12" id="top">
+    <section class="max-w-full w-full flex flex-col justify-center items-center fc-grey-1">
+        <h1 class="uppercase text-4xl">social science<hr class="border-none h-px bg-grey-1"></h1>
+        <h2 class="sub-title tracking-widest uppercase">history ncert</h2>
+        <!-- <div class="max-w-full w-full bg-red-400 h-4"></div> -->
+    </section>
+
+    <hr class="w-4/5 h-px mt-5 border-none bg-grey-1">
+
+    <section class="history max-w-full w-full flex flex-col justify-center items-center fc-grey-1">
+        <div class="theme-1 table-skeleton">
+
+            <div class="table-row-head table-row">
+                <div class="cell cell-prime cell-prime-head uppercase" title="Chapters."><span>chapters:</span></div>
+                <div class="cell cell-box cell-crit">R<span class="tooltip" style="margin-left: -30px; width: 60px;">Reading I</span></div>
+                <div class="cell cell-box cell-crit">IQ<span class="tooltip" style="margin-left: -35px; width: 70px;">Intext Questions</span></div>
+                <div class="cell cell-box cell-crit">BE<span class="tooltip" style="margin-left: -35px; width: 70px;">Back Exercises</span></div>
+                <div class="cell cell-box cell-crit">N<span class="tooltip" style="margin-left: -25px; width: 50px;">Notes I</span></div>
+                <div class="cell cell-box cell-crit">R<span class="tooltip" style="margin-left: -30px; width: 60px;">Reading II</span></div>
+                <div class="cell cell-box cell-crit">N<span class="tooltip" style="margin-left: -25px; width: 50px;">Notes II</span></div>
+                <div class="cell cell-box cell-crit">&check;<span class="tooltip" style="margin-left: -50px; width: 100px;">All Complete &check;</span></div>
+            </div>
+
+            <div class="table-row">
+                <div class="cell cell-prime capitalize" title="The French Revolution."><span>the french revolution.</span></div>
+                <div class="cell cell-box cell-check" onclick="check(this.id)" id="1"   ></div>
+                <div class="cell cell-box cell-check" onclick="check(this.id)" id="2"   ></div>
+                <div class="cell cell-box cell-check" onclick="check(this.id)" id="3"   ></div>
+                <div class="cell cell-box cell-check" onclick="check(this.id)" id="4"   ></div>
+                <div class="cell cell-box cell-check" onclick="check(this.id)" id="5"   ></div>
+                <div class="cell cell-box cell-check" onclick="check(this.id)" id="6"   ></div>
+                <div class="cell cell-box cell-check" onclick="check(this.id)" id="7"   ></div>
+            </div>
+
+            <div class="table-row">
+                <div class="cell cell-prime" title="Socialism in Europe and the Russian Revolution."><span>Socialism in Europe and the Russian Revolution.</span></div>
+                <div class="cell cell-box cell-check" onclick="check(this.id)" id="8"   ></div>
+                <div class="cell cell-box cell-check" onclick="check(this.id)" id="9"   ></div>
+                <div class="cell cell-box cell-check" onclick="check(this.id)" id="10"  ></div>
+                <div class="cell cell-box cell-check" onclick="check(this.id)" id="11"  ></div>
+                <div class="cell cell-box cell-check" onclick="check(this.id)" id="12"  ></div>
+                <div class="cell cell-box cell-check" onclick="check(this.id)" id="13"  ></div>
+                <div class="cell cell-box cell-check" onclick="check(this.id)" id="14"  ></div>
+            </div>
+
+            <div class="table-row">
+                <div class="cell cell-prime" title="Nazism and Rise of Hitler."><span>Nazism and Rise of Hitler.</span></div>
+                <div class="cell cell-box cell-check" onclick="check(this.id)" id="15"   ></div>
+                <div class="cell cell-box cell-check" onclick="check(this.id)" id="16"   ></div>
+                <div class="cell cell-box cell-check" onclick="check(this.id)" id="17"  ></div>
+                <div class="cell cell-box cell-check" onclick="check(this.id)" id="18"  ></div>
+                <div class="cell cell-box cell-check" onclick="check(this.id)" id="19"  ></div>
+                <div class="cell cell-box cell-check" onclick="check(this.id)" id="20"  ></div>
+                <div class="cell cell-box cell-check" onclick="check(this.id)" id="21"  ></div>
+            </div>
+
+            <div class="table-row">
+                <div class="cell cell-prime" title="Forests Society and Colonialism."><span>Forests Society and Colonialism.</span></div>
+                <div class="cell cell-box cell-check" onclick="check(this.id)" id="22"   ></div>
+                <div class="cell cell-box cell-check" onclick="check(this.id)" id="23"   ></div>
+                <div class="cell cell-box cell-check" onclick="check(this.id)" id="24"  ></div>
+                <div class="cell cell-box cell-check" onclick="check(this.id)" id="25"  ></div>
+                <div class="cell cell-box cell-check" onclick="check(this.id)" id="26"  ></div>
+                <div class="cell cell-box cell-check" onclick="check(this.id)" id="27"  ></div>
+                <div class="cell cell-box cell-check" onclick="check(this.id)" id="28"  ></div>
+            </div>
+
+            <div class="table-row">
+                <div class="cell cell-prime" title="Pastoralists in the Modern World."><span>Pastoralists in the Modern World.</span></div>
+                <div class="cell cell-box cell-check" onclick="check(this.id)" id="29"   ></div>
+                <div class="cell cell-box cell-check" onclick="check(this.id)" id="30"   ></div>
+                <div class="cell cell-box cell-check" onclick="check(this.id)" id="31"  ></div>
+                <div class="cell cell-box cell-check" onclick="check(this.id)" id="32"  ></div>
+                <div class="cell cell-box cell-check" onclick="check(this.id)" id="33"  ></div>
+                <div class="cell cell-box cell-check" onclick="check(this.id)" id="34"  ></div>
+                <div class="cell cell-box cell-check" onclick="check(this.id)" id="35"  ></div>
+            </div>
+
+        </div>
+    </section>
+
+    <hr class="w-4/5 h-px mt-8 border-none bg-grey-1">
+
+    <section class="max-w-full w-full flex flex-col justify-center items-center fc-grey-1">
+        <div class="theme-2 table-skeleton">
+
+            <div class="table-row-head table-row">
+                <div class="cell cell-prime cell-prime-head capitalize" title="The French Revolution."><span>1. the french revolution:</span></div>
+                <div class="cell cell-box cell-crit">R<span class="tooltip" style="margin-left: -30px; width: 60px;">Reading I</span></div>
+                <div class="cell cell-box cell-crit">IQ<span class="tooltip" style="margin-left: -35px; width: 70px;">Intext Questions</span></div>
+                <div class="cell cell-box cell-crit">BE<span class="tooltip" style="margin-left: -35px; width: 70px;">Back Exercises</span></div>
+                <div class="cell cell-box cell-crit">N<span class="tooltip" style="margin-left: -25px; width: 50px;">Notes I</span></div>
+                <div class="cell cell-box cell-crit">R<span class="tooltip" style="margin-left: -30px; width: 60px;">Reading II</span></div>
+                <div class="cell cell-box cell-crit">N<span class="tooltip" style="margin-left: -25px; width: 50px;">Notes II</span></div>
+                <div class="cell cell-box cell-crit">&check;<span class="tooltip" style="margin-left: -50px; width: 100px;">All Complete &check;</span></div>
+            </div>
+
+            <div class="table-row">
+                <div class="cell cell-prime capitalize" title="Introduction."><span>INTRODUCTION</span></div>
+                <div class="cell cell-box cell-check" onclick="check(this.id)" id="36"   ></div>
+                <div class="cell cell-box cell-check" onclick="check(this.id)" id="37"   ></div>
+                <div class="cell cell-box cell-check" onclick="check(this.id)" id="38"   ></div>
+                <div class="cell cell-box cell-check" onclick="check(this.id)" id="39"   ></div>
+                <div class="cell cell-box cell-check" onclick="check(this.id)" id="40"   ></div>
+                <div class="cell cell-box cell-check" onclick="check(this.id)" id="41"   ></div>
+                <div class="cell cell-box cell-check" onclick="check(this.id)" id="42"   ></div>
+            </div>
+
+            <div class="table-row">
+                <div class="cell cell-prime" title="Unit 1: French Society During the Late Eighteenth Century."><span>Unit 1: French Society During the Late Eighteenth Century.</span></div>
+                <div class="cell cell-box cell-check" onclick="check(this.id)" id="43"   ></div>
+                <div class="cell cell-box cell-check" onclick="check(this.id)" id="44"   ></div>
+                <div class="cell cell-box cell-check" onclick="check(this.id)" id="45"  ></div>
+                <div class="cell cell-box cell-check" onclick="check(this.id)" id="46"  ></div>
+                <div class="cell cell-box cell-check" onclick="check(this.id)" id="47"  ></div>
+                <div class="cell cell-box cell-check" onclick="check(this.id)" id="48"  ></div>
+                <div class="cell cell-box cell-check" onclick="check(this.id)" id="49"  ></div>
+            </div>
+
+            <div class="table-row">
+                <div class="cell cell-prime" title="Unit 2: The Outbreak of the Revolution."><span>Unit 2: The Outbreak of the Revolution.</span></div>
+                <div class="cell cell-box cell-check" onclick="check(this.id)" id="50"   ></div>
+                <div class="cell cell-box cell-check" onclick="check(this.id)" id="51"   ></div>
+                <div class="cell cell-box cell-check" onclick="check(this.id)" id="52"  ></div>
+                <div class="cell cell-box cell-check" onclick="check(this.id)" id="53"  ></div>
+                <div class="cell cell-box cell-check" onclick="check(this.id)" id="54"  ></div>
+                <div class="cell cell-box cell-check" onclick="check(this.id)" id="55"  ></div>
+                <div class="cell cell-box cell-check" onclick="check(this.id)" id="56"  ></div>
+            </div>
+
+            <div class="table-row">
+                <div class="cell cell-prime" title="Unit 3: France Abolishes Monarchy and Becomes Republic."><span>Unit 3: France Abolishes Monarchy and Becomes Republic.</span></div>
+                <div class="cell cell-box cell-check" onclick="check(this.id)" id="57"   ></div>
+                <div class="cell cell-box cell-check" onclick="check(this.id)" id="58"   ></div>
+                <div class="cell cell-box cell-check" onclick="check(this.id)" id="59"  ></div>
+                <div class="cell cell-box cell-check" onclick="check(this.id)" id="60"  ></div>
+                <div class="cell cell-box cell-check" onclick="check(this.id)" id="61"  ></div>
+                <div class="cell cell-box cell-check" onclick="check(this.id)" id="62"  ></div>
+                <div class="cell cell-box cell-check" onclick="check(this.id)" id="63"  ></div>
+            </div>
+
+            <div class="table-row">
+                <div class="cell cell-prime" title="Unit 4: Did Women have a Revolution?"><span>Unit 4: Did Women have a Revolution?</span></div>
+                <div class="cell cell-box cell-check" onclick="check(this.id)" id="64"   ></div>
+                <div class="cell cell-box cell-check" onclick="check(this.id)" id="65"   ></div>
+                <div class="cell cell-box cell-check" onclick="check(this.id)" id="66"  ></div>
+                <div class="cell cell-box cell-check" onclick="check(this.id)" id="67"  ></div>
+                <div class="cell cell-box cell-check" onclick="check(this.id)" id="68"  ></div>
+                <div class="cell cell-box cell-check" onclick="check(this.id)" id="69"  ></div>
+                <div class="cell cell-box cell-check" onclick="check(this.id)" id="70"  ></div>
+            </div>
+
+            <div class="table-row">
+                <div class="cell cell-prime" title="Unit 5: The Abolition of Slavery."><span>Unit 5: The Abolition of Slavery.</span></div>
+                <div class="cell cell-box cell-check" onclick="check(this.id)" id="71"   ></div>
+                <div class="cell cell-box cell-check" onclick="check(this.id)" id="72"   ></div>
+                <div class="cell cell-box cell-check" onclick="check(this.id)" id="73"  ></div>
+                <div class="cell cell-box cell-check" onclick="check(this.id)" id="74"  ></div>
+                <div class="cell cell-box cell-check" onclick="check(this.id)" id="75"  ></div>
+                <div class="cell cell-box cell-check" onclick="check(this.id)" id="76"  ></div>
+                <div class="cell cell-box cell-check" onclick="check(this.id)" id="77"  ></div>
+            </div>
+
+            <div class="table-row">
+                <div class="cell cell-prime" title="Unit 6: The Revolution and Everyday Life."><span>Unit 6: The Revolution and Everyday Life.</span></div>
+                <div class="cell cell-box cell-check" onclick="check(this.id)" id="78"   ></div>
+                <div class="cell cell-box cell-check" onclick="check(this.id)" id="79"   ></div>
+                <div class="cell cell-box cell-check" onclick="check(this.id)" id="80"  ></div>
+                <div class="cell cell-box cell-check" onclick="check(this.id)" id="81"  ></div>
+                <div class="cell cell-box cell-check" onclick="check(this.id)" id="82"  ></div>
+                <div class="cell cell-box cell-check" onclick="check(this.id)" id="83"  ></div>
+                <div class="cell cell-box cell-check" onclick="check(this.id)" id="84"  ></div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- <hr class="w-4/5 h-px mt-8 border-none bg-grey-1"> -->
+
+    <section class="max-w-full w-full flex flex-col justify-center items-center fc-grey-1">
+        <div class="theme-3 table-skeleton">
+    
+            <div class="table-row-head table-row">
+                <div class="cell cell-prime cell-prime-head" title="Socialism in Europe and the Russian Revolution."><span>2. Socialism in Europe and the Russian Revolution.</span></div>
+                <div class="cell cell-box cell-crit">R<span class="tooltip" style="margin-left: -30px; width: 60px;">Reading I</span></div>
+                <div class="cell cell-box cell-crit">IQ<span class="tooltip" style="margin-left: -35px; width: 70px;">Intext Questions</span></div>
+                <div class="cell cell-box cell-crit">BE<span class="tooltip" style="margin-left: -35px; width: 70px;">Back Exercises</span></div>
+                <div class="cell cell-box cell-crit">N<span class="tooltip" style="margin-left: -25px; width: 50px;">Notes I</span></div>
+                <div class="cell cell-box cell-crit">R<span class="tooltip" style="margin-left: -30px; width: 60px;">Reading II</span></div>
+                <div class="cell cell-box cell-crit">N<span class="tooltip" style="margin-left: -25px; width: 50px;">Notes II</span></div>
+                <div class="cell cell-box cell-crit">&check;<span class="tooltip" style="margin-left: -50px; width: 100px;">All Complete &check;</span></div>
+            </div>
+    
+            <div class="table-row">
+                <div class="cell cell-prime" title="Unit 1: The Age of Social Change."><span>Unit 1: The Age of Social Change.</span></div>
+                <div class="cell cell-box cell-check" onclick="check(this.id)" id="85"   ></div>
+                <div class="cell cell-box cell-check" onclick="check(this.id)" id="86"   ></div>
+                <div class="cell cell-box cell-check" onclick="check(this.id)" id="87"   ></div>
+                <div class="cell cell-box cell-check" onclick="check(this.id)" id="88"   ></div>
+                <div class="cell cell-box cell-check" onclick="check(this.id)" id="89"   ></div>
+                <div class="cell cell-box cell-check" onclick="check(this.id)" id="90"   ></div>
+                <div class="cell cell-box cell-check" onclick="check(this.id)" id="91"   ></div>
+            </div>
+    
+            <div class="table-row">
+                <div class="cell cell-prime" title="Unit 2: The Russian Revolution."><span>Unit 2: The Russian Revolution.</span></div>
+                <div class="cell cell-box cell-check" onclick="check(this.id)" id="92"   ></div>
+                <div class="cell cell-box cell-check" onclick="check(this.id)" id="93"   ></div>
+                <div class="cell cell-box cell-check" onclick="check(this.id)" id="94"  ></div>
+                <div class="cell cell-box cell-check" onclick="check(this.id)" id="95"  ></div>
+                <div class="cell cell-box cell-check" onclick="check(this.id)" id="96"  ></div>
+                <div class="cell cell-box cell-check" onclick="check(this.id)" id="97"  ></div>
+                <div class="cell cell-box cell-check" onclick="check(this.id)" id="98"  ></div>
+            </div>
+    
+            <div class="table-row">
+                <div class="cell cell-prime" title="Unit 3: The February Revolution in Petrograd."><span>Unit 3: The February Revolution in Petrograd.</span></div>
+                <div class="cell cell-box cell-check" onclick="check(this.id)" id="99"   ></div>
+                <div class="cell cell-box cell-check" onclick="check(this.id)" id="100"   ></div>
+                <div class="cell cell-box cell-check" onclick="check(this.id)" id="101"  ></div>
+                <div class="cell cell-box cell-check" onclick="check(this.id)" id="102"  ></div>
+                <div class="cell cell-box cell-check" onclick="check(this.id)" id="103"  ></div>
+                <div class="cell cell-box cell-check" onclick="check(this.id)" id="104"  ></div>
+                <div class="cell cell-box cell-check" onclick="check(this.id)" id="105"  ></div>
+            </div>
+    
+            <div class="table-row">
+                <div class="cell cell-prime" title="Unit 4: What Changed after October."><span>Unit 4: What Changed after October.</span></div>
+                <div class="cell cell-box cell-check" onclick="check(this.id)" id="106"   ></div>
+                <div class="cell cell-box cell-check" onclick="check(this.id)" id="107"   ></div>
+                <div class="cell cell-box cell-check" onclick="check(this.id)" id="108"  ></div>
+                <div class="cell cell-box cell-check" onclick="check(this.id)" id="109"  ></div>
+                <div class="cell cell-box cell-check" onclick="check(this.id)" id="110"  ></div>
+                <div class="cell cell-box cell-check" onclick="check(this.id)" id="111"  ></div>
+                <div class="cell cell-box cell-check" onclick="check(this.id)" id="112"  ></div>
+            </div>
+    
+            <div class="table-row">
+                <div class="cell cell-prime" title="Unit 5: The Global Influence of the Russian Revolution and the USSR."><span>Unit 5: The Global Influence of the Russian Revolution and the USSR.</span></div>
+                <div class="cell cell-box cell-check" onclick="check(this.id)" id="113"   ></div>
+                <div class="cell cell-box cell-check" onclick="check(this.id)" id="114"   ></div>
+                <div class="cell cell-box cell-check" onclick="check(this.id)" id="115"  ></div>
+                <div class="cell cell-box cell-check" onclick="check(this.id)" id="116"  ></div>
+                <div class="cell cell-box cell-check" onclick="check(this.id)" id="117"  ></div>
+                <div class="cell cell-box cell-check" onclick="check(this.id)" id="118"  ></div>
+                <div class="cell cell-box cell-check" onclick="check(this.id)" id="119"  ></div>
+            </div>
+    
+        </div>
+    </section>
+
+    <!-- <hr class="w-4/5 h-px mt-8 border-none bg-grey-1"> -->
+
+<section class="max-w-full w-full flex flex-col justify-center items-center fc-grey-1">
+    <div class="theme-4 table-skeleton">
+
+        <div class="table-row-head table-row">
+            <div class="cell cell-prime cell-prime-head" title="Nazism and Rise of Hitler."><span>3. Nazism and Rise of Hitler.</span></div>
+            <div class="cell cell-box cell-crit">R<span class="tooltip" style="margin-left: -30px; width: 60px;">Reading I</span></div>
+            <div class="cell cell-box cell-crit">IQ<span class="tooltip" style="margin-left: -35px; width: 70px;">Intext Questions</span></div>
+            <div class="cell cell-box cell-crit">BE<span class="tooltip" style="margin-left: -35px; width: 70px;">Back Exercises</span></div>
+            <div class="cell cell-box cell-crit">N<span class="tooltip" style="margin-left: -25px; width: 50px;">Notes I</span></div>
+            <div class="cell cell-box cell-crit">R<span class="tooltip" style="margin-left: -30px; width: 60px;">Reading II</span></div>
+            <div class="cell cell-box cell-crit">N<span class="tooltip" style="margin-left: -25px; width: 50px;">Notes II</span></div>
+            <div class="cell cell-box cell-crit">&check;<span class="tooltip" style="margin-left: -50px; width: 100px;">All Complete &check;</span></div>
+        </div>
+
+        <div class="table-row">
+            <div class="cell cell-prime" title="Introduction."><span>INTRODUCTION</span></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="120"   ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="121"   ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="122"   ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="123"   ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="124"   ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="125"   ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="126"   ></div>
+        </div>
+
+        <div class="table-row">
+            <div class="cell cell-prime" title="Unit 1: Birth of the Weimar Republic."><span>Unit 1: Birth of the Weimar Republic.</span></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="127"   ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="128"   ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="129"  ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="130"  ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="131"  ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="132"  ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="133"  ></div>
+        </div>
+
+        <div class="table-row">
+            <div class="cell cell-prime" title="Unit 2: Hitler's Rise to Power."><span>Unit 2: Hitler's Rise to Power.</span></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="134"   ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="135"   ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="136"  ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="137"  ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="138"  ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="139"  ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="140"  ></div>
+        </div>
+
+        <div class="table-row">
+            <div class="cell cell-prime" title="Unit 3: The Nazi World View."><span>Unit 3: The Nazi World View.</span></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="141"   ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="142"   ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="143"  ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="144"  ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="145"  ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="146"  ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="147"  ></div>
+        </div>
+
+        <div class="table-row">
+            <div class="cell cell-prime" title="Unit 4: Youth in Nazi Germany."><span>Unit 4: Youth in Nazi Germany.</span></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="148"   ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="149"   ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="150"  ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="151"  ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="152"  ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="153"  ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="154"  ></div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- <hr class="w-4/5 h-px mt-8 border-none bg-grey-1"> -->
+
+<section class="max-w-full w-full flex flex-col justify-center items-center fc-grey-1">
+
+    <div class="theme-1 table-skeleton">
+
+        <div class="table-row-head table-row">
+            <div class="cell cell-prime cell-prime-head" title="Forest Society and Colonialism."><span>4. Forest Society and Colonialism.</span></div>
+            <div class="cell cell-box cell-crit">R<span class="tooltip" style="margin-left: -30px; width: 60px;">Reading I</span></div>
+            <div class="cell cell-box cell-crit">IQ<span class="tooltip" style="margin-left: -35px; width: 70px;">Intext Questions</span></div>
+            <div class="cell cell-box cell-crit">BE<span class="tooltip" style="margin-left: -35px; width: 70px;">Back Exercises</span></div>
+            <div class="cell cell-box cell-crit">N<span class="tooltip" style="margin-left: -25px; width: 50px;">Notes I</span></div>
+            <div class="cell cell-box cell-crit">R<span class="tooltip" style="margin-left: -30px; width: 60px;">Reading II</span></div>
+            <div class="cell cell-box cell-crit">N<span class="tooltip" style="margin-left: -25px; width: 50px;">Notes II</span></div>
+            <div class="cell cell-box cell-crit">&check;<span class="tooltip" style="margin-left: -50px; width: 100px;">All Complete &check;</span></div>
+        </div>
+
+        <div class="table-row">
+            <div class="cell cell-prime" title="Introduction."><span>INTRODUCTION</span></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="155"   ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="156"   ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="157"   ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="158"   ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="159"   ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="160"   ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="161"   ></div>
+        </div>
+
+        <div class="table-row">
+            <div class="cell cell-prime" title="Unit 1: Why Deforestation?"><span>Unit 1: Why Deforestation?</span></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="162"   ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="163"   ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="164"  ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="165"  ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="166"  ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="167"  ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="168"  ></div>
+        </div>
+
+        <div class="table-row">
+            <div class="cell cell-prime" title="Unit 2: The Rise of Commercial Forestry."><span>Unit 2: The Rise of Commercial Forestry.</span></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="169"   ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="170"   ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="171"  ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="172"  ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="173"  ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="174"  ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="175"  ></div>
+        </div>
+
+        <div class="table-row">
+            <div class="cell cell-prime" title="Unit 3: Rebellion in the Forest."><span>Unit 3: Rebellion in the Forest.</span></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="176"   ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="177"   ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="178"  ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="179"  ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="180"  ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="181"  ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="182"  ></div>
+        </div>
+
+        <div class="table-row">
+            <div class="cell cell-prime" title="Unit 4: Forest Transformation in Java."><span>Unit 4: Forest Transformation in Java.</span></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="183"   ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="184"   ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="185"  ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="186"  ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="187"  ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="188"  ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="189"  ></div>
+        </div>
+
+    </div>
+    
+</section>
+
+<!-- <hr class="w-4/5 h-px mt-8 border-none bg-grey-1"> -->
+
+<section class="max-w-full w-full flex flex-col justify-center items-center fc-grey-1">
+
+    <div class="theme-2 table-skeleton">
+
+        <div class="table-row-head table-row">
+            <div class="cell cell-prime cell-prime-head" title="Pastoralists in the Modern World."><span>5. Pastoralists in the Modern World.</span></div>
+            <div class="cell cell-box cell-crit">R<span class="tooltip" style="margin-left: -30px; width: 60px;">Reading I</span></div>
+            <div class="cell cell-box cell-crit">IQ<span class="tooltip" style="margin-left: -35px; width: 70px;">Intext Questions</span></div>
+            <div class="cell cell-box cell-crit">BE<span class="tooltip" style="margin-left: -35px; width: 70px;">Back Exercises</span></div>
+            <div class="cell cell-box cell-crit">N<span class="tooltip" style="margin-left: -25px; width: 50px;">Notes I</span></div>
+            <div class="cell cell-box cell-crit">R<span class="tooltip" style="margin-left: -30px; width: 60px;">Reading II</span></div>
+            <div class="cell cell-box cell-crit">N<span class="tooltip" style="margin-left: -25px; width: 50px;">Notes II</span></div>
+            <div class="cell cell-box cell-crit">&check;<span class="tooltip" style="margin-left: -50px; width: 100px;">All Complete &check;</span></div>
+        </div>
+
+        <div class="table-row">
+            <div class="cell cell-prime" title="Introduction."><span>INTRODUCTION</span></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="190"   ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="191"   ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="192"   ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="193"   ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="194"   ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="195"   ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="196"   ></div>
+        </div>
+
+        <div class="table-row">
+            <div class="cell cell-prime" title="Unit 1: Pastoral Nomads and Their Movement."><span>Unit 1: Pastoral Nomads and Their Movement.</span></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="197"   ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="198"   ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="199"  ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="200"  ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="201"  ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="202"  ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="203"  ></div>
+        </div>
+
+        <div class="table-row">
+            <div class="cell cell-prime" title="Unit 2: Colonial Rule and Pastoral Life."><span>Unit 2: Colonial Rule and Pastoral Life.</span></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="204"   ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="205"   ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="206"  ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="207"  ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="208"  ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="209"  ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="210"  ></div>
+        </div>
+
+        <div class="table-row">
+            <div class="cell cell-prime" title="Unit 3: Pastoralism in Africa."><span>Unit 3: Pastoralism in Africa.</span></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="211"   ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="212"   ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="213"  ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="214"  ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="215"  ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="216"  ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="217"  ></div>
+        </div>
+
+    </div>
+    
+</section>
+
+<hr class="w-4/5 h-px mt-8 border-none bg-grey-1">
+
+<section class="mt-5 max-w-full w-full flex flex-col justify-center items-center fc-grey-1">
+    <h1 class="uppercase text-4xl">social science<hr class="border-none h-px bg-grey-1"></h1>
+    <h2 class="sub-title tracking-widest uppercase">Geography ncert</h2>
+    <!-- <div class="max-w-full w-full bg-red-400 h-4"></div> -->
+</section>
+
+<hr class="w-4/5 h-px mt-5 border-none bg-grey-1">
+
+<section class="max-w-full w-full flex flex-col justify-center items-center fc-grey-1">
+
+    <div class="theme-3 table-skeleton">
+
+        <div class="table-row-head table-row">
+            <div class="cell cell-prime cell-prime-head uppercase" title="chapters."><span>chapters: </span></div>
+            <div class="cell cell-box cell-crit">R<span class="tooltip" style="margin-left: -30px; width: 60px;">Reading I</span></div>
+            <div class="cell cell-box cell-crit">IQ<span class="tooltip" style="margin-left: -35px; width: 70px;">Intext Questions</span></div>
+            <div class="cell cell-box cell-crit">BE<span class="tooltip" style="margin-left: -35px; width: 70px;">Back Exercises</span></div>
+            <div class="cell cell-box cell-crit">N<span class="tooltip" style="margin-left: -25px; width: 50px;">Notes I</span></div>
+            <div class="cell cell-box cell-crit">R<span class="tooltip" style="margin-left: -30px; width: 60px;">Reading II</span></div>
+            <div class="cell cell-box cell-crit">N<span class="tooltip" style="margin-left: -25px; width: 50px;">Notes II</span></div>
+            <div class="cell cell-box cell-crit">&check;<span class="tooltip" style="margin-left: -50px; width: 100px;">All Complete &check;</span></div>
+        </div>
+
+        <div class="table-row">
+            <div class="cell cell-prime" title="India - Size and Location."><span>India - Size and Location.</span></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="218"   ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="219"   ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="220"   ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="221"   ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="222"   ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="223"   ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="224"   ></div>
+        </div>
+
+        <div class="table-row">
+            <div class="cell cell-prime" title="Physical Features of India."><span>Physical Features of India.</span></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="225"   ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="226"   ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="227"  ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="228"  ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="229"  ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="230"  ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="231"  ></div>
+        </div>
+
+        <div class="table-row">
+            <div class="cell cell-prime" title="Drainage."><span>Drainage.</span></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="232"   ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="233"   ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="234"  ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="235"  ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="236"  ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="237"  ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="238"  ></div>
+        </div>
+
+        <div class="table-row">
+            <div class="cell cell-prime" title="Natural Vegetation and Wildlife."><span>Natural Vegetation and Wildlife.</span></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="239"   ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="240"   ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="241"  ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="242"  ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="243"  ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="244"  ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="245"  ></div>
+        </div>
+
+        <div class="table-row">
+            <div class="cell cell-prime" title="Population."><span>Population.</span></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="246"   ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="247"   ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="248"  ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="249"  ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="250"  ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="251"  ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="252"  ></div>
+        </div>
+
+    </div>
+    
+</section>
+
+<hr class="w-4/5 h-px mt-8 border-none bg-grey-1">
+
+<section class="mt-5 max-w-full w-full flex flex-col justify-center items-center fc-grey-1">
+    <h1 class="uppercase text-4xl">social science<hr class="border-none h-px bg-grey-1"></h1>
+    <h2 class="sub-title tracking-widest uppercase">economics ncert</h2>
+    <!-- <div class="max-w-full w-full bg-red-400 h-4"></div> -->
+</section>
+
+<hr class="w-4/5 h-px mt-5 border-none bg-grey-1">
+
+<section class="max-w-full w-full flex flex-col justify-center items-center fc-grey-1">
+
+    <div class="theme-4 table-skeleton">
+
+        <div class="table-row-head table-row">
+            <div class="cell cell-prime cell-prime-head uppercase" title="chapters."><span>chapters: </span></div>
+            <div class="cell cell-box cell-crit">R<span class="tooltip" style="margin-left: -30px; width: 60px;">Reading I</span></div>
+            <div class="cell cell-box cell-crit">IQ<span class="tooltip" style="margin-left: -35px; width: 70px;">Intext Questions</span></div>
+            <div class="cell cell-box cell-crit">BE<span class="tooltip" style="margin-left: -35px; width: 70px;">Back Exercises</span></div>
+            <div class="cell cell-box cell-crit">N<span class="tooltip" style="margin-left: -25px; width: 50px;">Notes I</span></div>
+            <div class="cell cell-box cell-crit">R<span class="tooltip" style="margin-left: -30px; width: 60px;">Reading II</span></div>
+            <div class="cell cell-box cell-crit">N<span class="tooltip" style="margin-left: -25px; width: 50px;">Notes II</span></div>
+            <div class="cell cell-box cell-crit">&check;<span class="tooltip" style="margin-left: -50px; width: 100px;">All Complete &check;</span></div>
+        </div>
+
+        <div class="table-row">
+            <div class="cell cell-prime" title="The Story of Village Palampur."><span>The Story of Village Palampur.</span></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="253"   ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="254"   ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="255"   ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="256"   ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="257"   ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="258"   ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="259"   ></div>
+        </div>
+
+        <div class="table-row">
+            <div class="cell cell-prime" title="People as Resource."><span>People as Resource.</span></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="260"   ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="261"   ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="262"  ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="263"  ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="264"  ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="265"  ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="266"  ></div>
+        </div>
+
+        <div class="table-row">
+            <div class="cell cell-prime" title="Poverty as Challenge."><span>Poverty as Challenge.</span></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="267"   ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="268"   ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="269"  ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="270"  ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="271"  ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="272"  ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="273"  ></div>
+        </div>
+
+        <div class="table-row">
+            <div class="cell cell-prime" title="Food Security in India."><span>Food Security in India.</span></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="274"   ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="275"   ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="276"  ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="277"  ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="278"  ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="279"  ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="280"  ></div>
+        </div>
+
+    </div>
+    
+</section>
+
+<hr class="w-4/5 h-px mt-8 border-none bg-grey-1">
+
+<section class="mt-5 max-w-full w-full flex flex-col justify-center items-center fc-grey-1">
+    <h1 class="uppercase text-4xl">social science<hr class="border-none h-px bg-grey-1"></h1>
+    <h2 class="sub-title tracking-widest uppercase">democratics ncert</h2>
+    <!-- <div class="max-w-full w-full bg-red-400 h-4"></div> -->
+</section>
+
+<hr class="w-4/5 h-px mt-5 border-none bg-grey-1">
+
+<section class="max-w-full w-full flex flex-col justify-center items-center fc-grey-1">
+
+    <div class="theme-1 table-skeleton">
+
+        <div class="table-row-head table-row">
+            <div class="cell cell-prime cell-prime-head uppercase" title="chapters."><span>chapters:</span></div>
+            <div class="cell cell-box cell-crit">R<span class="tooltip" style="margin-left: -30px; width: 60px;">Reading I</span></div>
+            <div class="cell cell-box cell-crit">IQ<span class="tooltip" style="margin-left: -35px; width: 70px;">Intext Questions</span></div>
+            <div class="cell cell-box cell-crit">BE<span class="tooltip" style="margin-left: -35px; width: 70px;">Back Exercises</span></div>
+            <div class="cell cell-box cell-crit">N<span class="tooltip" style="margin-left: -25px; width: 50px;">Notes I</span></div>
+            <div class="cell cell-box cell-crit">R<span class="tooltip" style="margin-left: -30px; width: 60px;">Reading II</span></div>
+            <div class="cell cell-box cell-crit">N<span class="tooltip" style="margin-left: -25px; width: 50px;">Notes II</span></div>
+            <div class="cell cell-box cell-crit">&check;<span class="tooltip" style="margin-left: -50px; width: 100px;">All Complete &check;</span></div>
+        </div>
+
+        <div class="table-row">
+            <div class="cell cell-prime" title="What is Democracy? Why is Democracy?"><span>What is Democracy? Why is Democracy?</span></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="281"   ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="282"   ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="283"   ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="284"   ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="285"   ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="286"   ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="287"   ></div>
+        </div>
+
+        <div class="table-row">
+            <div class="cell cell-prime" title="Constitutional Design."><span>Constitutional Design.</span></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="288"   ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="289"   ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="290"  ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="291"  ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="292"  ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="293"  ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="294"  ></div>
+        </div>
+
+        <div class="table-row">
+            <div class="cell cell-prime" title="Electoral Politics."><span>Electoral Politics.</span></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="295"   ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="296"   ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="297"  ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="298"  ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="299"  ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="300"  ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="301"  ></div>
+        </div>
+
+        <div class="table-row">
+            <div class="cell cell-prime" title="Working of Institutions."><span>Working of Institutions.</span></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="302"   ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="303"   ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="304"  ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="305"  ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="306"  ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="307"  ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="308"  ></div>
+        </div>
+
+        <div class="table-row">
+            <div class="cell cell-prime" title="Democratic Rights."><span>Democratic Rights.</span></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="309"   ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="310"   ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="311"  ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="312"  ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="313"  ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="314"  ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="315"  ></div>
+        </div>
+
+    </div>
+    
+</section>
+
+<hr class="w-4/5 h-px mt-8 border-none bg-grey-1">
+
+<section class="max-w-full w-full flex flex-col justify-center items-center fc-grey-1">
+
+    <div class="theme-2 table-skeleton">
+
+        <div class="table-row-head table-row">
+            <div class="cell cell-prime cell-prime-head" title="What is Democracy? Why is Democracy?"><span>1. What is Democracy? Why is Democracy?</span></div>
+            <div class="cell cell-box cell-crit">R<span class="tooltip" style="margin-left: -30px; width: 60px;">Reading I</span></div>
+            <div class="cell cell-box cell-crit">IQ<span class="tooltip" style="margin-left: -35px; width: 70px;">Intext Questions</span></div>
+            <div class="cell cell-box cell-crit">BE<span class="tooltip" style="margin-left: -35px; width: 70px;">Back Exercises</span></div>
+            <div class="cell cell-box cell-crit">N<span class="tooltip" style="margin-left: -25px; width: 50px;">Notes I</span></div>
+            <div class="cell cell-box cell-crit">R<span class="tooltip" style="margin-left: -30px; width: 60px;">Reading II</span></div>
+            <div class="cell cell-box cell-crit">N<span class="tooltip" style="margin-left: -25px; width: 50px;">Notes II</span></div>
+            <div class="cell cell-box cell-crit">&check;<span class="tooltip" style="margin-left: -50px; width: 100px;">All Complete &check;</span></div>
+        </div>
+
+        <div class="table-row">
+            <div class="cell cell-prime" title="What is Democracy?"><span>1.1 What is Democracy?</span></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="316"   ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="317"   ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="318"   ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="319"   ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="320"   ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="321"   ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="322"   ></div>
+        </div>
+
+        <div class="table-row">
+            <div class="cell cell-prime" title="Features of Democracy."><span>1.2 Features of Democracy.</span></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="323"   ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="324"   ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="325"  ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="326"  ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="327"  ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="328"  ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="329"  ></div>
+        </div>
+
+        <div class="table-row">
+            <div class="cell cell-prime" title="Why Democracy?"><span>1.3 Why Democracy?</span></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="330"   ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="331"   ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="332"  ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="333"  ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="334"  ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="335"  ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="336"  ></div>
+        </div>
+
+        <div class="table-row">
+            <div class="cell cell-prime" title="Broder Meanings of Democracy."><span>1.4 Broder Meanings of Democracy.</span></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="337"   ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="338"   ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="339"  ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="340"  ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="341"  ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="342"  ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="343"  ></div>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="max-w-full w-full flex flex-col justify-center items-center fc-grey-1">
+
+    <div class="theme-3 table-skeleton">
+
+        <div class="table-row-head table-row">
+            <div class="cell cell-prime cell-prime-head" title="Constitutional Design."><span>2. Constitutional Design.</span></div>
+            <div class="cell cell-box cell-crit">R<span class="tooltip" style="margin-left: -30px; width: 60px;">Reading I</span></div>
+            <div class="cell cell-box cell-crit">IQ<span class="tooltip" style="margin-left: -35px; width: 70px;">Intext Questions</span></div>
+            <div class="cell cell-box cell-crit">BE<span class="tooltip" style="margin-left: -35px; width: 70px;">Back Exercises</span></div>
+            <div class="cell cell-box cell-crit">N<span class="tooltip" style="margin-left: -25px; width: 50px;">Notes I</span></div>
+            <div class="cell cell-box cell-crit">R<span class="tooltip" style="margin-left: -30px; width: 60px;">Reading II</span></div>
+            <div class="cell cell-box cell-crit">N<span class="tooltip" style="margin-left: -25px; width: 50px;">Notes II</span></div>
+            <div class="cell cell-box cell-crit">&check;<span class="tooltip" style="margin-left: -50px; width: 100px;">All Complete &check;</span></div>
+        </div>
+
+        <div class="table-row">
+            <div class="cell cell-prime" title="Democratic Constitution on South Africa."><span>2.1 Democratic Constitution on South Africa.</span></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="344"   ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="345"   ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="346"   ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="347"   ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="348"   ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="349"   ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="350"   ></div>
+        </div>
+
+        <div class="table-row">
+            <div class="cell cell-prime" title="Why do we need a Constitution?"><span>2.2 Why do we need a Constitution?</span></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="351"   ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="352"   ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="353"  ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="354"  ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="355"  ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="356"  ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="357"  ></div>
+        </div>
+
+        <div class="table-row">
+            <div class="cell cell-prime" title="Making of the Indian Constitution."><span>2.3 Making of the Indian Constitution.</span></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="358"   ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="359"   ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="360"  ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="361"  ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="362"  ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="363"  ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="364"  ></div>
+        </div>
+
+        <div class="table-row">
+            <div class="cell cell-prime" title="Guiding values of the Indian Constitution."><span>2.4 Guiding values of the Indian Constitution.</span></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="365"   ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="366"   ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="367"  ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="368"  ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="369"  ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="370"  ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="371"  ></div>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="max-w-full w-full flex flex-col justify-center items-center fc-grey-1">
+
+    <div class="theme-4 table-skeleton">
+
+        <div class="table-row-head table-row">
+            <div class="cell cell-prime cell-prime-head" title="Electoral Politics."><span>3. Electoral Politics.</span></div>
+            <div class="cell cell-box cell-crit">R<span class="tooltip" style="margin-left: -30px; width: 60px;">Reading I</span></div>
+            <div class="cell cell-box cell-crit">IQ<span class="tooltip" style="margin-left: -35px; width: 70px;">Intext Questions</span></div>
+            <div class="cell cell-box cell-crit">BE<span class="tooltip" style="margin-left: -35px; width: 70px;">Back Exercises</span></div>
+            <div class="cell cell-box cell-crit">N<span class="tooltip" style="margin-left: -25px; width: 50px;">Notes I</span></div>
+            <div class="cell cell-box cell-crit">R<span class="tooltip" style="margin-left: -30px; width: 60px;">Reading II</span></div>
+            <div class="cell cell-box cell-crit">N<span class="tooltip" style="margin-left: -25px; width: 50px;">Notes II</span></div>
+            <div class="cell cell-box cell-crit">&check;<span class="tooltip" style="margin-left: -50px; width: 100px;">All Complete &check;</span></div>
+        </div>
+
+        <div class="table-row">
+            <div class="cell cell-prime" title="Why Elections?"><span>3.1 Why Elections?</span></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="372"   ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="373"   ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="374"   ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="375"   ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="376"   ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="377"   ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="378"   ></div>
+        </div>
+
+        <div class="table-row">
+            <div class="cell cell-prime" title="What is Our System of Elections."><span>3.2 What is Our System of Elections.</span></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="379"   ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="380"   ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="381"  ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="382"  ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="383"  ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="384"  ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="385"  ></div>
+        </div>
+
+        <div class="table-row">
+            <div class="cell cell-prime" title="What Makes Elections in India Democratic."><span>3.3 What Makes Elections in India Democratic.</span></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="386"   ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="387"   ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="388"  ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="389"  ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="390"  ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="391"  ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="392"  ></div>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="max-w-full w-full flex flex-col justify-center items-center fc-grey-1">
+
+    <div class="theme-1 table-skeleton">
+
+        <div class="table-row-head table-row">
+            <div class="cell cell-prime cell-prime-head" title="Working of Institutions."><span>4. Working of Institutions.</span></div>
+            <div class="cell cell-box cell-crit">R<span class="tooltip" style="margin-left: -30px; width: 60px;">Reading I</span></div>
+            <div class="cell cell-box cell-crit">IQ<span class="tooltip" style="margin-left: -35px; width: 70px;">Intext Questions</span></div>
+            <div class="cell cell-box cell-crit">BE<span class="tooltip" style="margin-left: -35px; width: 70px;">Back Exercises</span></div>
+            <div class="cell cell-box cell-crit">N<span class="tooltip" style="margin-left: -25px; width: 50px;">Notes I</span></div>
+            <div class="cell cell-box cell-crit">R<span class="tooltip" style="margin-left: -30px; width: 60px;">Reading II</span></div>
+            <div class="cell cell-box cell-crit">N<span class="tooltip" style="margin-left: -25px; width: 50px;">Notes II</span></div>
+            <div class="cell cell-box cell-crit">&check;<span class="tooltip" style="margin-left: -50px; width: 100px;">All Complete &check;</span></div>
+        </div>
+
+        <div class="table-row">
+            <div class="cell cell-prime" title="How is a Major Policy Decision Taken?"><span>4.1 How is a Major Policy Decision Taken?</span></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="393"   ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="394"   ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="395"   ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="396"   ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="397"   ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="398"   ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="399"   ></div>
+        </div>
+
+        <div class="table-row">
+            <div class="cell cell-prime" title="Parliament."><span>4.2 Parliament.</span></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="400"   ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="401"   ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="402"  ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="403"  ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="404"  ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="405"  ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="406"  ></div>
+        </div>
+
+        <div class="table-row">
+            <div class="cell cell-prime" title="Political Executive."><span>4.3 Political Executive.</span></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="407"   ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="408"   ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="409"  ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="410"  ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="411"  ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="412"  ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="413"  ></div>
+        </div>
+
+        <div class="table-row">
+            <div class="cell cell-prime" title="The Judiciary."><span>4.4 The Judiciary.</span></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="414"   ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="415"   ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="416"  ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="417"  ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="418"  ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="419"  ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="420"  ></div>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="max-w-full w-full flex flex-col justify-center items-center fc-grey-1">
+
+    <div class="theme-2 table-skeleton">
+
+        <div class="table-row-head table-row">
+            <div class="cell cell-prime cell-prime-head" title="Democratic Rights."><span>5. Democratic Rights.</span></div>
+            <div class="cell cell-box cell-crit">R<span class="tooltip" style="margin-left: -30px; width: 60px;">Reading I</span></div>
+            <div class="cell cell-box cell-crit">IQ<span class="tooltip" style="margin-left: -35px; width: 70px;">Intext Questions</span></div>
+            <div class="cell cell-box cell-crit">BE<span class="tooltip" style="margin-left: -35px; width: 70px;">Back Exercises</span></div>
+            <div class="cell cell-box cell-crit">N<span class="tooltip" style="margin-left: -25px; width: 50px;">Notes I</span></div>
+            <div class="cell cell-box cell-crit">R<span class="tooltip" style="margin-left: -30px; width: 60px;">Reading II</span></div>
+            <div class="cell cell-box cell-crit">N<span class="tooltip" style="margin-left: -25px; width: 50px;">Notes II</span></div>
+            <div class="cell cell-box cell-crit">&check;<span class="tooltip" style="margin-left: -50px; width: 100px;">All Complete &check;</span></div>
+        </div>
+
+        <div class="table-row">
+            <div class="cell cell-prime" title="Life without Rights."><span>5.1 Life without Rights.</span></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="421"   ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="422"   ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="423"   ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="424"   ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="425"   ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="426"   ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="427"   ></div>
+        </div>
+
+        <div class="table-row">
+            <div class="cell cell-prime" title="Rights in a Democracy."><span>5.2 Rights in a Democracy.</span></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="428"   ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="429"   ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="430"  ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="431"  ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="432"  ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="433"  ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="434"  ></div>
+        </div>
+
+        <div class="table-row">
+            <div class="cell cell-prime" title="Rights in an Indian Constitution."><span>5.3 Rights in an Indian Constitution.</span></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="435"   ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="436"   ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="437"  ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="438"  ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="439"  ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="440"  ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="441"  ></div>
+        </div>
+
+        <div class="table-row">
+            <div class="cell cell-prime" title="Expanding Scope of Rights."><span>5.4 Expanding Scope of Rights.</span></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="442"   ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="443"   ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="444"  ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="445"  ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="446"  ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="447"  ></div>
+            <div class="cell cell-box cell-check" onclick="check(this.id)" id="448"  ></div>
+        </div>
+
+    </div>
+
+</section>
+
+<footer class="w-full mt-5 text-right">
+    <a class="reset-btn border border-current uppercase w-min px-5 rounded inline-block text-red-400 cursor-pointer" href="#top" onclick="reset()" >reset</a>
+</footer>
+
+</div> 
+
+<script src="app.js"></script>
+</body>
+</html> 
