@@ -33,6 +33,7 @@ if ("start" in localStorage) {
     else {for (let i = lenLS; i <= boxes; i++) {localStorage.setItem(i,'cell-blank')}}
 } else {
     localStorage.clear()
+    classWrite();
     dataWrite();
     var lenLS = boxes
 }
