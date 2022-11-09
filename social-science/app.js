@@ -1,4 +1,4 @@
-const boxes = 448+1;
+const boxes = 455+1;
 const states = ['cell-blank','cell-dashed','cell-tick','cell-crossed'];
 
 function classWrite(){
