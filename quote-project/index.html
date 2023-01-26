@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Signika:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/hamburgers.min.css">
+    <link rel="stylesheet" href="style.css" />
+    <title>Quotes</title>
+  </head>
+  <body>
+    <nav id="nav" class="navbar">
+      <div class="drawer">
+        <div class="saved-qs" id="saved-qs">
+
+          <!-- <div class="sq-card">
+            <div class="sq-upper"><div class="when" title="20/01/2023 - 22:53" id="sq-when">20/01 - 10:53 PM</div><div class="sq-card-unpin"><i class="fa-solid fa-thumbtack"></i></div></div>
+            <a class="sq-text" id="sq-text">Bing? Who the fuck uses Bing? 
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio maxime quae voluptas expedita odio delectus numquam impedit commodi iusto iste, possimus omnis animi hic, eum fugiat, fugit nulla facere exercitationem.</a>
+            <div class="sq-author"><a id="sq-author">dad</a></div>
+          </div> -->
+
+        </div>
+        <div class="nav-footer">
+          <div class="unpin-all" onclick="localStorage.clear(); order=[]; savedCards.innerHTML = '';"><span>unpin•all</span></div>
+        </div>
+      </div>
+      <div class="menu-btn" id="menu-btn" onclick="dn()">
+        <div class="hamburger hamburger--arrow" id="burger">
+          <div class="hamburger-box">
+            <div class="hamburger-inner"></div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="face">
+      <div class="upper">
+        <a target="_blank" id="quote-text"></a>
+        <i class="fa-solid fa-thumbtack save-pin" onclick="pin()" id="save-pin"></i>
+        <div class="q-footer">
+          <div class="q-author"><a target="_blank" id="quote-author"></a></div>
+          <div class="clip" id="clip"><span onclick="copy();"><i class="fa-regular fa-copy"></i></span></div>
+        </div>
+      </div>
+      <div id="gen-btn" class="gen-btn" onclick="nq()">
+        <span>NEW•QUOTE</span>
+        <div class="backdrop">
+          <div class="loader">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://kit.fontawesome.com/4ea6e3ab0b.js" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
