@@ -46,29 +46,28 @@ function nq() {
     )
       .then((response) => response.json())
       .then((response) => (quoteReq = response))
+      .then((response) => {
+        console.log(quoteReq);
+  
+        quotePin.classList.add("dis-b");
+        genBtn.classList.remove("gen-btn-click");
+        quoteTextContent = quoteReq.content;
+        quoteTextLink = quoteReq.url;
+        quoteAuthorName = quoteReq.originator.name;
+        quoteAuthorLink = quoteReq.originator.url;
+        quoteTextID = quoteReq.id;
+  
+        quoteText.innerHTML = ('"'+quoteTextContent+'"');
+        quoteText.href = quoteTextLink;
+  
+        quoteAuthor.innerHTML = ('~ '+quoteAuthorName+'.');
+        quoteAuthor.href = quoteAuthorLink;
+        
+        clip.classList.remove("clip-clked");
+        clip.classList.add('dis-b');
+        MCM = true;
+      })
       .catch((err) => console.error(err));
-
-    window.setTimeout(function () {
-      console.log(quoteReq);
-
-      quotePin.classList.add("dis-b");
-      genBtn.classList.remove("gen-btn-click");
-      quoteTextContent = quoteReq.content;
-      quoteTextLink = quoteReq.url;
-      quoteAuthorName = quoteReq.originator.name;
-      quoteAuthorLink = quoteReq.originator.url;
-      quoteTextID = quoteReq.id;
-
-      quoteText.innerHTML = ('"'+quoteTextContent+'"');
-      quoteText.href = quoteTextLink;
-
-      quoteAuthor.innerHTML = ('~ '+quoteAuthorName+'.');
-      quoteAuthor.href = quoteAuthorLink;
-      
-      clip.classList.remove("clip-clked");
-      clip.classList.add('dis-b');
-      MCM = true;
-    }, 2500);
   }
 }
 
@@ -147,4 +146,3 @@ function start(){
 }
 
 start()
-
