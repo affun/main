@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- imports -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+
+    <title>index</title>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/split.js/1.6.0/split.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.63.3/codemirror.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.63.3/codemirror.min.css"
+    />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.63.3/mode/xml/xml.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.63.3/mode/javascript/javascript.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.63.3/mode/css/css.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.63.3/addon/hint/show-hint.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.63.3/addon/hint/javascript-hint.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.63.3/addon/hint/html-hint.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.63.3/addon/hint/css-hint.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.63.3/addon/edit/closebrackets.min.js"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.63.3/addon/hint/show-hint.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.63.3/theme/yonce.min.css"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.63.3/theme/material-darker.min.css"
+    />
+
+    <script src="https://codemirror.net/addon/display/placeholder.js"></script>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body class="flex w-screen h-screen text-white bg-body p-4">
+    <div id="left" class="left flex flex-col">
+      <div id="html" class="codeEditor flex flex-col h-full">
+        <div class="rounded-md bg-dark h-full overflow-hidden shadow-dark">
+          <div
+            class="
+              header
+              p-3
+              flex
+              w-full
+              justify-between
+              items-center
+              font-bold
+            "
+          >
+            <div class="flex space-x-2 items-center">
+              <i class="fab fa-html5 text-yellow-600"></i>
+              <div class="exo-text">HTML</div>
+            </div>
+            <i
+              onclick="fullscreenEditor('html')"
+              class="fas fa-expand cursor-pointer"
+            ></i>
+          </div>
+          <div class="codeMirror h-full overflow-hidden"></div>
+        </div>
+      </div>
+
+      <div id="css" class="codeEditor flex flex-col h-full">
+        <div class="rounded-md bg-dark h-full overflow-hidden shadow-dark">
+          <div class="header p-3 flex w-full justify-between font-bold">
+            <div class="flex space-x-2 items-center">
+              <i class="fab fa-css3 text-blue-500"></i>
+              <div class="exo-text">CSS</div>
+            </div>
+            <i
+              onclick="fullscreenEditor('css')"
+              class="fas fa-expand cursor-pointer"
+            ></i>
+          </div>
+          <div class="codeMirror h-full overflow-hidden"></div>
+        </div>
+      </div>
+
+      <div id="js" class="codeEditor flex flex-col h-full">
+        <div class="rounded-md bg-dark h-full overflow-hidden shadow-dark">
+          <div
+            class="
+              header
+              p-3
+              flex
+              w-full
+              justify-between
+              items-center
+              font-bold
+            "
+          >
+            <div class="flex space-x-2 items-center">
+              <i class="fab fa-js-square text-yellow-400"></i>
+              <div class="exo-text">JS</div>
+            </div>
+            <i
+              onclick="fullscreenEditor('js')"
+              class="fas fa-expand cursor-pointer"
+            ></i>
+          </div>
+          <div class="codeMirror h-full overflow-hidden"></div>
+        </div>
+      </div>
+    </div>
+    <div id="right" class="right flex flex-col">
+      <div class="option w-full flex justify-end space-x-4 mb-4">
+        <div class="flex">
+          <div class="run-fction flex shadow-dark">
+            <div
+              class="
+                px-4
+                py-2
+                bg-red-500 bg-green-500
+                rounded-l-md
+                cursor-pointer
+                btn
+                transition
+                duration-300
+                flex
+                items-center
+                relative
+                font-bold
+                btn
+              "
+              onclick="toggleRun(this)"
+            >
+              <span class="absolute exo-text rounded-md">Toggle Auto Run</span>
+              <i class="fas fa-toggle-on fa-toggle-off text-3xl leading-3" onclick="toggleRunBtn(this)"></i>
+            </div>
+            <div
+              class="
+                px-4
+                py-2
+                bg-indigo-700
+                rounded-r-md
+                cursor-pointer
+                btn
+                transition
+                duration-300
+                font-bold
+                btn
+              "
+              onclick="Run()"
+            >
+            <span class="absolute exo-text rounded-md">Run The Code</span>
+              <div class="exo-text">RUN</div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="
+            px-4
+            py-2
+            bg-indigo-700
+            rounded-md
+            shadow-dark
+            cursor-pointer
+            btn
+            transition
+            duration-300
+            font-bold
+            btn
+            btnd
+          "
+          onclick="save()"
+        >
+         <span class="absolute exo-text rounded-md">Download The File</span>
+          <div class="exo-text">SAVE</div>
+        </div>
+        <div
+          class="
+            px-4
+            py-2
+            bg-indigo-700
+            rounded-md
+            shadow-dark
+            cursor-pointer
+            btn
+            transition
+            duration-300
+            z-20
+            font-bold
+            btn
+            btnf
+          "
+          onclick="fullscreenIframe(this)"
+        >
+        <span class="absolute exo-text rounded-md">See The Output In Fullscreen</span>
+          <div class="exo-text">FULLSCREEN</div>
+        </div>
+      </div>
+      <iframe
+        id="output"
+        srcdoc=""
+        frameborder="0"
+        class="bg-white w-full h-full rounded-md shadow-dark"
+      ></iframe>
+    </div>
+
+    <!-- <script src="https://kit.fontawesome.com/4ea6e3ab0b.js" crossorigin="anonymous"></script> -->
+    <script src="app.js"></script>
+  </body>
+</html>

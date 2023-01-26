@@ -1,0 +1,108 @@
+.exo-text {
+  font-family: "Nunito", sans-serif;
+  letter-spacing: 0.2rem;
+}
+
+.gutter {
+  background-color: transparent;
+  cursor: col-resize;
+}
+
+.left .gutter{
+  cursor: row-resize;
+}
+
+.CodeMirror {
+  height: 100%;
+}
+
+.bg-body {
+  background: #171717;
+}
+
+.bg-dark {
+  background: #212121;
+}
+
+.shadow-dark {
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.6);
+}
+
+.btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.8);
+}
+
+.codeEditor:focus-within {
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.9);
+}
+
+.shadow-darker {
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.6);
+}
+
+.right {
+  min-width: 31.01vw;
+}
+
+.fullscreen {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  left: 0;
+  top: 0;
+  border-radius: 0;
+  z-index: 10;
+}
+
+.fullscreen-codeEditor {
+  padding: 40px;
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  left: 0;
+  top: 0;
+  border-radius: 0;
+  z-index: 30;
+  backdrop-filter: blur(20px);
+}
+
+.btn span {
+  position: absolute;
+  bottom: -80%;
+  left: -70%;
+  visibility: hidden;
+  z-index: 1;
+  text-align: center;
+
+  font-size: 0.75rem;
+  padding: 4px;
+
+  width: 10rem;
+  
+  color: rgba(0, 0, 0, 0);
+
+  
+  transition: all 0.3s linear;
+}
+
+.btn:hover span {
+  visibility: visible;
+  color: #fff;
+  background: #171717;
+}
+
+.btnd span {
+
+  left: -60%;
+  width: 12rem;
+
+}
+
+.btnf span {
+
+  bottom: -100%;
+  left: -15%;
+  width: 12rem;
+
+}
