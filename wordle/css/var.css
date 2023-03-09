@@ -1,0 +1,11 @@
+:root{
+  --clr-bgfc: #F5FFFA;
+  --clr-used: #B0E0E6;
+  --clr-fresh: #AFEEEE;    
+  --clr-correct: #98FB98;
+  --clr-neg: #F0E68C;
+  --clr-danger: #FFA07A;
+  --clr-active: #ADD8E6;
+  --clr-win-tint: #99fa9966;
+  --clr-loss-tint: #FFA07A66;
+}

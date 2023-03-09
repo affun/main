@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- css -->
+    <link rel="stylesheet" href="css/var.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+
+    <title>WORDLE!</title>
+  </head>
+  <body>
+    <div class="notification" id="i-word">
+      <div class="n-content">
+        <div class="n-prompt">invalid word</div>
+      </div>
+    </div>
+
+    <!-- win / loss -->
+    <div id="end" class="end-bg">
+      <div class="end-content">
+        <div class="end-prompt">
+          <div class="ep-content">
+            <div class="ep-title">
+              <div id="ephw-text" class="eph-text">you win</div>
+              <div id="ephl-text" class="eph-text">you lose</div>
+            </div>
+            <div class="end-word tile-row ">
+              <div class="tile" id="et-1"><div class="tile-letter" id="etl-1"></div></div>
+              <div class="tile" id="et-2"><div class="tile-letter" id="etl-2"></div></div>
+              <div class="tile" id="et-3"><div class="tile-letter" id="etl-3"></div></div>
+              <div class="tile" id="et-4"><div class="tile-letter" id="etl-4"></div></div>
+              <div class="tile" id="et-5"><div class="tile-letter" id="etl-5"></div></div>
+            </div>
+            <div class="end-retry-btn">
+              <div class="erb-text" onclick="window.location.reload();">replay</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <main class="main df" id="main">
+      <div class="content">
+        <div class="interface" id="interspace">
+          <div class="tile-row" id="tr-1">
+            <div class="tile" id="t-1"><div class="tile-letter" id="tl-1"></div></div>
+            <div class="tile" id="t-2"><div class="tile-letter" id="tl-2"></div></div>
+            <div class="tile" id="t-3"><div class="tile-letter" id="tl-3"></div></div>
+            <div class="tile" id="t-4"><div class="tile-letter" id="tl-4"></div></div>
+            <div class="tile" id="t-5"><div class="tile-letter" id="tl-5"></div></div>
+          </div>
+          <div class="tile-row" id="tr-2">
+            <div class="tile" id="t-6"><div class="tile-letter" id="tl-6"></div></div>
+            <div class="tile" id="t-7"><div class="tile-letter" id="tl-7"></div></div>
+            <div class="tile" id="t-8"><div class="tile-letter" id="tl-8"></div></div>
+            <div class="tile" id="t-9"><div class="tile-letter" id="tl-9"></div></div>
+            <div class="tile" id="t-10"><div class="tile-letter" id="tl-10"></div></div>
+          </div>
+          <div class="tile-row" id="tr-3">
+            <div class="tile" id="t-11"><div class="tile-letter" id="tl-11"></div></div>
+            <div class="tile" id="t-12"><div class="tile-letter" id="tl-12"></div></div>
+            <div class="tile" id="t-13"><div class="tile-letter" id="tl-13"></div></div>
+            <div class="tile" id="t-14"><div class="tile-letter" id="tl-14"></div></div>
+            <div class="tile" id="t-15"><div class="tile-letter" id="tl-15"></div></div>
+          </div>
+          <div class="tile-row" id="tr-4">
+            <div class="tile" id="t-16"><div class="tile-letter" id="tl-16"></div></div>
+            <div class="tile" id="t-17"><div class="tile-letter" id="tl-17"></div></div>
+            <div class="tile" id="t-18"><div class="tile-letter" id="tl-18"></div></div>
+            <div class="tile" id="t-19"><div class="tile-letter" id="tl-19"></div></div>
+            <div class="tile" id="t-20"><div class="tile-letter" id="tl-20"></div></div>
+          </div>
+          <div class="tile-row" id="tr-5">
+            <div class="tile" id="t-21"><div class="tile-letter" id="tl-21"></div></div>
+            <div class="tile" id="t-22"><div class="tile-letter" id="tl-22"></div></div>
+            <div class="tile" id="t-23"><div class="tile-letter" id="tl-23"></div></div>
+            <div class="tile" id="t-24"><div class="tile-letter" id="tl-24"></div></div>
+            <div class="tile" id="t-25"><div class="tile-letter" id="tl-25"></div></div>
+          </div>
+          <div class="tile-row" id="tr-6">
+            <div class="tile" id="t-26"><div class="tile-letter" id="tl-26"></div></div>
+            <div class="tile" id="t-27"><div class="tile-letter" id="tl-27"></div></div>
+            <div class="tile" id="t-28"><div class="tile-letter" id="tl-28"></div></div>
+            <div class="tile" id="t-29"><div class="tile-letter" id="tl-29"></div></div>
+            <div class="tile" id="t-30"><div class="tile-letter" id="tl-30"></div></div>
+          </div>
+        </div>
+
+        <div class="keypad" id="keypad">
+          <div class="key-row" id="kr-1">
+            <div class="key" id="k-q" onmouseup="update('q')"><span class="letter" id="kl-q">q</span></div>
+            <div class="key" id="k-w" onmouseup="update('w')"><span class="letter" id="kl-w">w</span></div>
+            <div class="key" id="k-e" onmouseup="update('e')"><span class="letter" id="kl-e">e</span></div>
+            <div class="key" id="k-r" onmouseup="update('r')"><span class="letter" id="kl-r">r</span></div>
+            <div class="key" id="k-t" onmouseup="update('t')"><span class="letter" id="kl-t">t</span></div>
+            <div class="key" id="k-y" onmouseup="update('y')"><span class="letter" id="kl-y">y</span></div>
+            <div class="key" id="k-u" onmouseup="update('u')"><span class="letter" id="kl-u">u</span></div>
+            <div class="key" id="k-i" onmouseup="update('i')"><span class="letter" id="kl-i">i</span></div>
+            <div class="key" id="k-o" onmouseup="update('o')"><span class="letter" id="kl-o">o</span></div>
+            <div class="key" id="k-p" onmouseup="update('p')"><span class="letter" id="kl-p">p</span></div>
+          </div>
+          <div class="key-row" id="kr-2">
+            <div class="key" id="k-a" onmouseup="update('a')"><span class="letter" id="kl-a">a</span></div>
+            <div class="key" id="k-s" onmouseup="update('s')"><span class="letter" id="kl-s">s</span></div>
+            <div class="key" id="k-d" onmouseup="update('d')"><span class="letter" id="kl-d">d</span></div>
+            <div class="key" id="k-f" onmouseup="update('f')"><span class="letter" id="kl-f">f</span></div>
+            <div class="key" id="k-g" onmouseup="update('g')"><span class="letter" id="kl-g">g</span></div>
+            <div class="key" id="k-h" onmouseup="update('h')"><span class="letter" id="kl-h">h</span></div>
+            <div class="key" id="k-j" onmouseup="update('j')"><span class="letter" id="kl-j">j</span></div>
+            <div class="key" id="k-k" onmouseup="update('k')"><span class="letter" id="kl-k">k</span></div>
+            <div class="key" id="k-l" onmouseup="update('l')"><span class="letter" id="kl-l">l</span></div>
+          </div>
+          <div class="key-row" id="kr-3">
+            <div class="key" id="k-z" onmouseup="update('z')"><span class="letter" id="kl-z">z</span></div>
+            <div class="key" id="k-x" onmouseup="update('x')"><span class="letter" id="kl-x">x</span></div>
+            <div class="key" id="k-c" onmouseup="update('c')"><span class="letter" id="kl-c">c</span></div>
+            <div class="key" id="k-v" onmouseup="update('v')"><span class="letter" id="kl-v">v</span></div>
+            <div class="key" id="k-b" onmouseup="update('b')"><span class="letter" id="kl-b">b</span></div>
+            <div class="key" id="k-n" onmouseup="update('n')"><span class="letter" id="kl-n">n</span></div>
+            <div class="key" id="k-m" onmouseup="update('m')"><span class="letter" id="kl-m">m</span></div>
+            <div class="key k-backspace" id="k-backspace" onmouseup="update('backspace')">
+              <span class="letter" id="kl-m">←</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
