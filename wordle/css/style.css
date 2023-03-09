@@ -95,17 +95,17 @@ body {
   transition: all ease-out 0.05s;
 }
 
-.key:hover{
+.key:hover {
   background: var(--clr-active);
   transform: translateY(-5px);
 }
 
-.key:active{
+.key:active {
   background: var(--clr-used);
   transform: translateY(2px);
 }
 
-.k-backspace{
+.k-backspace {
   background: var(--clr-used);
   aspect-ratio: initial !important;
   width: 45px;
@@ -115,18 +115,18 @@ body {
   /* width: 100%; */
 }
 
-.k-backspace:hover{
+.k-backspace:hover {
   background: var(--clr-active);
   transform: translateY(0px);
 }
 
-.k-backspace:active{
+.k-backspace:active {
   background: var(--clr-used);
   transform: translateY(2px);
 }
 
 /* notification */
-.notification{
+.notification {
   position: absolute;
   background: var(--clr-danger);
   box-sizing: content-box;
@@ -142,21 +142,21 @@ body {
   font-size: 1.2rem;
 }
 
-.n-prompt{
+.n-prompt {
   text-transform: uppercase;
   letter-spacing: 5px;
   text-align: center;
   width: 100%;
 }
 
-.n-active{
+.n-active {
   top: 1vh;
   /* display: flex; */
 }
 
 /* win / loss */
 
-.end-bg{
+.end-bg {
   position: absolute;
   width: 100vw;
   height: 100vh;
@@ -169,14 +169,15 @@ body {
   /* z-index: -10; */
 }
 
-.end-content, .ep-content{
+.end-content,
+.ep-content {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
 }
 
-.end-prompt{
+.end-prompt {
   background: var(--clr-bgfc);
   margin-bottom: 10vh;
   max-width: 500px;
@@ -185,60 +186,61 @@ body {
   padding: 3rem 0;
 }
 
-.ep-content{
+.ep-content {
   gap: 2rem;
 }
 
-.eph-text{
+.eph-text {
   text-transform: uppercase;
   font-weight: 500;
   font-size: 4rem;
   letter-spacing: 0.5rem;
 }
 
-.end-word{
+.end-word {
   gap: 20px;
 }
 
-.end-word .tile{
+.end-word .tile {
   aspect-ratio: 75/110;
 }
 
-.end-word .tile-letter{
+.end-word .tile-letter {
   font-size: 115%;
 }
 
-.win{
+.win {
   background: var(--clr-win-tint);
 }
 
-.loss{
+.loss {
   background: var(--clr-loss-tint);
 }
 
-.win, .loss{
+.win,
+.loss {
   /* display: flex; */
   visibility: visible;
   opacity: 1;
 }
 
-.win #ephl-text{
+.win #ephl-text {
   display: none;
 }
 
-.win #ephw-text{
+.win #ephw-text {
   color: var(--clr-correct);
 }
 
-.loss #ephw-text{
+.loss #ephw-text {
   display: none;
 }
 
-.loss #ephl-text{
+.loss #ephl-text {
   color: var(--clr-danger);
 }
 
-.end-retry-btn{
+.end-retry-btn {
   background: var(--clr-fresh);
   transition: all ease-out 0.3s;
   cursor: pointer;
@@ -248,18 +250,18 @@ body {
   transform: scale(1.2);
 }
 
-.erb-text{
+.erb-text {
   text-transform: uppercase;
   letter-spacing: 0.3rem;
   user-select: none;
 }
 
-.end-retry-btn:hover{
+.end-retry-btn:hover {
   background: var(--clr-used);
 }
 
-@media screen and (max-width: 767px){
-  .key-row{
+@media screen and (max-width: 767px) {
+  .key-row {
     gap: 8px;
   }
   .interface {
@@ -268,28 +270,51 @@ body {
   .tile-row {
     gap: 8px;
   }
-  .tile{
+  .tile {
     width: 50px;
   }
-  .notification{
+  .notification {
     left: 1vh;
   }
-  .n-prompt{
-  font-size: 1.75rem;
+  .n-prompt {
+    font-size: 1.75rem;
   }
   /* .k-backspace{
     display: flex;
   } */
-  .key:hover{
+  .key:hover {
     transform: translateY(0px);
   }
-  .key:active{
+  .key:active {
     transform: translateY(2px);
+  }
+  body {
+    overflow: hidden;
+  }
+  .win {
+    max-width: 100vw;
+  }
+  .end-prompt {
+    max-width: 100%;
+    margin: 0 10vw 10vh;
+    width: 100%;
+  }
+  .eph-text {
+    font-size: 3rem;
+  }
+  .end-word {
+    transform: scale(0.8);
+  }
+  .end-retry-btn {
+    transform: scale(1);
+  }
+  .ep-content {
+    gap: 1rem;
   }
 }
 
-@media screen and (max-width: 400px){
-  .key-row{
+@media screen and (max-width: 400px) {
+  .key-row {
     gap: 6px;
   }
   .interface {
@@ -298,33 +323,38 @@ body {
   .tile-row {
     gap: 7px;
   }
-  .tile{
+  .tile {
     width: 45px;
   }
 }
 
 /* manager */
 
-.op{
+.op {
   opacity: 1;
 }
 
-.df{
+.df {
   display: flex;
-} 
-.correct, .correct:hover, .correct:active{
+}
+.correct,
+.correct:hover,
+.correct:active {
   background: var(--clr-correct);
 }
-.neg, .neg:hover, .neg:active{
+.neg,
+.neg:hover,
+.neg:active {
   background: var(--clr-neg);
 }
-.k-used{
+.k-used {
   background: var(--clr-used);
 }
-.k-used:hover, .correct:hover{
+.k-used:hover,
+.correct:hover {
   transform: translateY(0px);
 }
 
-.kb-dander{
+.kb-dander {
   background: var(--clr-danger) !important;
 }
